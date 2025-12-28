@@ -1,7 +1,7 @@
 #include <Arduino.h>
 #include <ArduinoProXR.h>
 
-#define RELAYBOARD_UART Serial4
+#define RELAYBOARD_UART Serial4 // Change to match the Serial instance matching the UART you are using
 #define RELAYBOARD_BAUD 115200
 
 RelayBoard rb(RELAYBOARD_UART);
