@@ -29,7 +29,7 @@
  * PROXR_DEBUG_STREAM macro
  */
 #undef PROXR_VERBOSE
-#define PROXR_VERBOSE
+// #define PROXR_VERBOSE
 
 /* Debug info output stream
  * An instance of Print or a derived class to print debug info to, if the
