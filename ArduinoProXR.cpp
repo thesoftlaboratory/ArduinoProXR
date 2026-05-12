@@ -75,7 +75,9 @@ ProXRErr RelayBoard::send(
 
 void RelayBoard::resolve(ProXRErr status)
 {
-  DEBUG_LN("Resolving transaction... ");
+  DEBUG_LN();
+  DEBUG("Status code: ") DEBUG_LN((int)status);
+  DEBUG("Latency (ms): ") DEBUG_LN((long)(millis() - (this->timeout - PROXR_PACKET_TIMEOUT)));
 
   this->status = status;
   if (callback) {
